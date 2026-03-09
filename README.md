@@ -1,1 +1,1 @@
-# ecos-practice
+# cos-practice
