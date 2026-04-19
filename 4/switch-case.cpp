@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 		break;
 		default:
 		cout << "You entered unknown number" << endl;
+		cout << "Your argument is:" << argv[1] << "\n" << argc;
 	}
 	return 0;
 }
