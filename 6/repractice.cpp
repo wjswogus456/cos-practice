@@ -1,26 +1,24 @@
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
+using namespace std;
 
-typedef struct food{
+struct foodgroup {
     int number;
     const char *name;
-    void (*foodfunction)(struct food *);
-} food_t;
+    void (*print)(struct foodgroup *);
+};
 
-void function(food_t *fd){
-    한번 연습해보시오.
+void printfood(struct foodgroup *fd){
+    cout << "number = " << fd->number << "\nname = " << fd->name << endl;
 }
 
-int main (int argc, char *argv[]){
-
-    food_t *fd;
-    fd = (food_t *)malloc(sizeof(food_t));
-
-    fd->number = 1;
-    fd->name = "chicken";
-    fd->foodfunction = function;
-
-    fd->foodfunction(fd);
-
+int main(int arbc, char *argv[]){
+    struct foodgroup *fd;
+    fd = (struct foodgroup *)malloc(sizeof(struct foodgroup));
+    fd->number = 3;
+    fd->name = "chamber";
+    fd->print = printfood;
+    fd->print(fd);
+    return 0;
 }

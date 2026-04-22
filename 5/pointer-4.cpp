@@ -8,8 +8,8 @@ int main(int argc, char *argv[]){
 
     p = str1 + 2;
 
-    cout << "str1 = " << str1 << endl;
-    cout << "str2 = " << str2 << endl;
+    cout << "str1 = " << str1 << endl; 
+    cout << "str2 = " << str2 << endl; 
     cout << "p = " << p << endl;
     cout << "&str1 = " << (void *)str1 << endl;
     cout << "&p = " << (void *)p << endl;
